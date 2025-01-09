@@ -1,0 +1,352 @@
+<style>
+    .color-cyan {
+      color: #20a6ff;
+    }
+    .poppins-bold {
+      font-family: "poppinsbold", serif, Georgia;
+      font-size: 32px;
+    }
+    @media (max-width: 962px) {
+      #siteWrapper .row.dnnpane:nth-child(2) {
+          padding-top: 0px;
+      }
+    }
+    .text-sorteo {
+      font-size: 18px;
+      line-height: 26px !important;
+      text-align: center !important;
+    }
+    .text-sorte3 {
+      font-size: 12px;
+      line-height: 16px !important;
+      text-align: center !important;
+    }
+    .text-fecha {
+      font-size: 24px !important;
+      line-height: 22px !important;
+      color: #20a6ff;
+      text-align: center !important;
+      font-weight: bold !important;
+    }
+  </style>
+  <style>
+    .content-celeste {
+      display: flex;
+      justify-content: center !important;
+      background: #f1f9ff;
+      max-width: 500px;
+      margin: auto;
+      text-align: center;
+      padding: 16px;
+      border-radius: 8px;
+      margin-top: 32px;
+      align-items: center !important;
+    }
+    .text-bono {
+      font-size: 24px !important;
+      line-height: 30px !important;
+      text-align: left;
+    }
+    .text-bono .monto {
+      font-size: 50px !important;
+      line-height: 60px !important;
+    }
+    .content-celeste-img {
+      width: 100% !important;
+    }
+    .content-texto {
+      margin-left: 10px;
+    }
+    .content-celeste-img {
+      margin-right: 10px;
+    }
+    .grupo-tarjetas {
+        width: 44%;
+      }
+    @media (max-width: 767px) {
+      .text-bono {
+        font-size: 20px !important;
+        line-height: 24px !important;
+      }
+      .text-bono .monto {
+        font-size: 30px !important;
+        line-height: 40px !important;
+      }
+      .content-celeste-img {
+        width: 76% !important;
+      }
+      .grupo-tarjetas {
+        width: 70%;
+      }
+      .content-texto {
+        margin-left: initial !important;
+        margin-right: 0 !important;
+      }
+      .content-celeste-img {
+        margin-right: initial !important;
+      }
+      .content-celeste {
+        padding: 16px 8px;
+      }
+      .text-fecha {
+        font-size: 20px !important;
+        line-height: 24px !important;
+      }
+      @media (max-width: 768px) {
+        .ocultar-mobile {
+          display: none;
+        }
+        .titlePrin {
+          font-size: 28px !important;
+          line-height: 32px !important;
+          margin-top: 24px !important;
+        }
+        .text-bono .monto {
+          font-size: 46px !important;
+          line-height: 50px !important;
+        }
+        .bb-display-flex.premios .monto {
+          line-height: 80px;
+        }
+        .text-bono2 {
+          text-align: right;
+          font-size: 20px !important;
+        }
+      }
+    }
+    .cantidad {
+      font-family: "latoblack";
+      font-weight: 900;
+      font-style: normal;
+      font-size: 100px;
+      color: #20a6ff;
+      margin-bottom: 0;
+      line-height: 90px;
+    }
+    .text-bono2 {
+      margin-bottom: 0;
+      line-height: 30px !important;
+      align-self: center !important;
+      text-align: right;
+      padding-left: 24px;
+      font-size: 24px;
+      font-weight: 700;
+    }
+    .bono {
+      font-weight: 900 !important;
+      font-size: 50px !important;
+      color: #20a6ff;
+      font-family: "latoblack";
+      line-height: 54px;
+    }
+    .content-celeste.content-pink {
+      background-color: #fff;
+      box-shadow: 0px 0px 10px 0px rgba(132, 132, 132, 0.15);
+      border-radius: 20px;
+    }
+    .ganadores {
+      text-align: left;
+      line-height: 30px;
+      font-size: 24px;
+      font-weight: 700;
+      padding-top: 4px;
+      margin-bottom: 0 !important;
+      color: #20a6ff;
+    }
+    .content-img-tabla {
+      max-width: 500px;
+      margin: auto;
+      margin-top: 32px;
+      margin-bottom: 32px;
+    }
+    .content-img-tabla img {
+      width: 100%;
+    }
+    .border-d {
+      border-style: dashed;
+      border-color: black;
+      border-color: #ad96dc;
+      border-width: 2px;
+      border-radius: 20px;
+      padding: 0 50px;
+    }
+    .relative {
+      position: relative;
+    }
+    .absolute {
+      position: absolute;
+    }
+    .title-box {
+      top: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: white;
+      margin: 0 auto;
+    }
+    .content-condiciones {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 10px;
+    }
+    .content-condiciones ul li {
+      margin-bottom: 5px;
+    }
+    @media screen and (max-width: 500px) {
+      .content-condiciones {
+        flex-direction: column;
+      }
+      .list-top {
+        margin-top: 16px !important;
+      }
+      .cantidad {
+        font-size: 80px;
+        line-height: 80px !important;
+      }
+      .text-bono {
+        font-size: 20px !important;
+        line-height: 24px !important;
+      }
+      .text-bono2 {
+        text-align: right;
+        font-size: 20px !important;
+      }
+      .text-bono2 .bono {
+        font-size: 24px !important;
+        line-height: 40px !important;
+      }
+      .ganadores {
+        font-size: 24px !important;
+        line-height: 24px !important;
+      }
+      .content-celeste {
+        padding: 20px 20px !important;
+        max-width: 100% !important;
+      }
+      .premios {
+        margin: 0 auto;
+      }
+    }
+    .content-600 {
+      max-width: 600px;
+      gap: 20px;
+      padding: 24px 0;
+    }
+    .content-tabla-m {
+      display: flex;
+      justify-content: center;
+    }
+    .content-tabla-m img {
+      width: 90%;
+    }
+    .cantidad-m {
+      font-size: 90px;
+      line-height: 80px;
+      margin-top: 10px;
+    }
+    .simbolo-soles {
+      font-size: 64px;
+    }
+    @media (max-width: 425px) {
+      .text-bono2-m {
+        text-align: center;
+        padding-left: 0;
+      }
+    }
+    @media (max-width: 768px) {
+      .content-tabla-m img {
+        width: 100%;
+      }
+      .ganadores-m {
+        font-size: 20px !important;
+      }
+    }
+    .text-parrafo {
+      text-align: center;
+      font-size: 16px !important;
+      line-height: 20px;
+      margin-top: 24px;
+      margin-bottom: 30px;
+    }
+    .card-notificacion {
+      display: flex;
+      background: #e9f7ff;
+      padding: 16px;
+      margin: auto;
+    }
+    .card-notificacion p {
+      font-size: 12px;
+      margin: 0;
+      line-height: 16px;
+      color: #004470;
+      text-align: left;
+      padding-left: 12px;
+    }
+    .m-w-536 {
+      max-width: 536px;
+    }
+    .m-w-400 {
+      max-width: 400px;
+    }
+  </style>
+  <link rel="stylesheet" href="/Portals/0/Landings/kiss-2022/css/styles.css">
+  <div class="content-first" bis_skin_checked="1">
+      <div class="section" bis_skin_checked="1">
+          <div class="centrado mt-4" bis_skin_checked="1">
+              <div class="col-xs-12 col-md-8 des-center mb-3" bis_skin_checked="1">
+                  <p class="text-sorteo mt-1">
+                      <strong>
+                      Acumula una opción para el sorteo por cada consumo minimo de:</strong>
+                  </p>
+                  <div class="content-img-tabla content-tabla-m" bis_skin_checked="1">
+                      <img src="https://www.banbif.com.pe/Portals/0/Landings/sorteo-tarjeta-credito/consumo-bono-tabla.svg" alt="tabla tarjeta de credito">
+                  </div>
+                  <p class="text-sorteo mt-3">
+                      <strong>Y podrías ganar 1 de las:</strong>
+                  </p>
+                  <div class="content-celeste content-pink content-600" bis_skin_checked="1">
+                      <div class="ocultar-mobile" bis_skin_checked="1">
+                          <img class="content-celeste-img" src="https://www.banbif.com.pe/Portals/0/Landings/sorteo-tarjeta-credito/billetes.svg" style="width: 100px; height: 140px">
+                      </div>
+                      <div style="align-self: center !important" class="content-texto" bis_skin_checked="1">
+                          <div class="premios" bis_skin_checked="1">
+                              <p class="text-bono2 color-cyan text-bono2-m" style="text-align: center;">
+                                  1 de los 20 bonos de
+                              </p>
+                              <p class="cantidad cantidad-m">
+                                  <strong class="simbolo-soles">S/</strong>1000
+                              </p>
+                              <p style="text-align: center" class="ganadores ganadores-m">
+                                  para borrar tu deuda
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+                  <p class="text-fecha mt-5">Serán 20 ganadores
+                  </p>
+                  <p class="text-center mt-1 mb-5">
+                      <strong>Válido para consumos virtuales y presenciales.
+                      </strong>
+                  </p>
+                  <p class="text-fecha mt-3">Fecha del sorteo: 14 de febrero de 2025
+                  </p>
+                  <p class="text-center mt-1">
+                      <strong>Vigencia del sorteo del 01 al 31 de enero de 2025</strong>
+                  </p>
+                  <div class="text-center">
+                      <p class="text-center mt-4">Encuentra esta y otras promociones en:
+                      </p>
+                  </div>
+                  <div class="text-center">
+                      <a class="btnAzul sm-sp sm-center mac" href="https://clubhola.pe/" target="_blank">ClubHOLA.pe</a>
+                  </div>
+                  <div class="text-center mt-2" bis_skin_checked="1">
+                      <img class="grupo-tarjetas" src="https://www.banbif.com.pe/Portals/0/Landings/sorteo-tarjeta-credito/img-tarjetas.png" alt="tarjeta de credito">
+                  </div>
+                  <p class="text-center" style=" margin-top: 52px; margin-bottom: 32px; font-size: 16px; line-height: 20px; color: #6b6b6b; ">
+                      Mayor información de nuestro producto Tarjeta de Crédito en
+                      <strong>www. banbif. com. pe</strong>
+                  </p>
+              </div>
+          </div>
+      </div>
+  </div>
